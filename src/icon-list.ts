@@ -154,6 +154,10 @@ export const iconList: IconData[] = [
     displayName: "Expo",
   },
   {
+    id: "reactnative",
+    displayName: "React Native",
+  },
+  {
     id: "reactnavigation",
     displayName: "React Navigation",
   },
@@ -168,5 +172,9 @@ export const iconList: IconData[] = [
   {
     id: "googlemapsapi",
     displayName: "Google Maps API",
+  },
+  {
+    id: "fritzing",
+    displayName: "Fritzing",
   },
 ];

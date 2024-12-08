@@ -1,50 +1,57 @@
-# React + TypeScript + Vite
+<img height="100px" width="100px" src="https://github.com/devlotfi/stack-icons/blob/main/github-assets/logo.svg">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 📜 stack-icons
+Technology icons for github markdown
 
-## Expanding the ESLint configuration
+# 📌 Contents
+- [Tech stack](#-tech-stack)
+- [Project setup](#-project-setup)
+- [Preview](#-preview)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+# 💻 Tech stack
 
-- Configure the top-level `parserOptions` property like this:
+## Website
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+<p float="left">
+  <img height="50px" src="https://github.com/devlotfi/stack-icons/blob/main/icons/html.svg">
+  <img height="50px" src="https://github.com/devlotfi/stack-icons/blob/main/icons/css.svg">
+  <img height="50px" src="https://github.com/devlotfi/stack-icons/blob/main/icons/ts.svg">
+  <img height="50px" src="https://github.com/devlotfi/stack-icons/blob/main/icons/tailwind.svg">
+  <img height="50px" src="https://github.com/devlotfi/stack-icons/blob/main/icons/react.svg">
+  <img height="50px" src="https://github.com/devlotfi/stack-icons/blob/main/icons/fontawesome.svg">
+  <img height="50px" src="https://github.com/devlotfi/stack-icons/blob/main/icons/formik.svg">
+  <img height="50px" src="https://github.com/devlotfi/stack-icons/blob/main/icons/nextui.svg">
+  <img height="50px" src="https://github.com/devlotfi/stack-icons/blob/main/icons/vite.svg">
+</p>
+
+## Icons
+
+<p float="left">
+  <img height="50px" src="https://github.com/devlotfi/stack-icons/blob/main/icons/figma.svg">
+</p>
+
+
+# 📂 Project Setup
+
+## Requirements
+- Node JS
+- Yarn
+
+## Install
+
+```bash
+$ yarn
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Development
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+$ yarn run dev
 ```
+
+# 📷 Preview
+
+<img src="https://github.com/devlotfi/stack-icons/blob/main/github-assets/preview-1.png">
+<img src="https://github.com/devlotfi/stack-icons/blob/main/github-assets/preview-2.png">

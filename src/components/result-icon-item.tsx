@@ -55,7 +55,7 @@ export default function ResultIconItem({ selectedIcon }: Props) {
         />
       </PopoverTrigger>
 
-      <PopoverContent className="p-[1rem] flex flex-row space-x-3">
+      <PopoverContent className="p-[0.5rem] flex flex-row space-x-3">
         <Button
           color="danger"
           variant="bordered"

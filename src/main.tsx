@@ -4,13 +4,16 @@ import "./index.css";
 import App from "./App.tsx";
 import { NextUIProvider } from "@nextui-org/react";
 import AppProvider from "./provider/app-provider.tsx";
+import { ThemeProvider } from "./provider/theme-provider.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <NextUIProvider>
-      <AppProvider>
-        <App />
-      </AppProvider>
+      <ThemeProvider>
+        <AppProvider>
+          <App />
+        </AppProvider>
+      </ThemeProvider>
     </NextUIProvider>
   </StrictMode>
 );

@@ -22,7 +22,10 @@ export default function Result() {
             <>
               <div className="flex flex-wrap gap-1">
                 {selectedIcons.map((selectedIcon) => (
-                  <ResultIconItem selectedIcon={selectedIcon}></ResultIconItem>
+                  <ResultIconItem
+                    key={selectedIcon.icon.id}
+                    selectedIcon={selectedIcon}
+                  ></ResultIconItem>
                 ))}
               </div>
               <Input

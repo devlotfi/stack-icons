@@ -6,6 +6,7 @@ import ResultIconItem from "./result-icon-item";
 import CodeDisplay from "./code-display";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTextHeight } from "@fortawesome/free-solid-svg-icons";
+import { faMarkdown } from "@fortawesome/free-brands-svg-icons";
 
 export default function Result() {
   const { selectedIcons, height, setHeight } = useContext(AppContext);
@@ -13,7 +14,14 @@ export default function Result() {
   return (
     <Card shadow="none" className="border border-divider">
       <CardHeader>
-        <div className="flex font-medium text-[13pt]">Result</div>
+        <div className="flex space-x-2 items-center text-[12pt]">
+          <FontAwesomeIcon
+            className="text-primary"
+            icon={faMarkdown}
+          ></FontAwesomeIcon>
+          <div className="flex font-medium">Result</div>
+          <div className="flex text-[11pt]">(Click icons to edit)</div>
+        </div>
       </CardHeader>
       <Divider></Divider>
       <CardBody>

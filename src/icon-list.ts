@@ -182,7 +182,7 @@ export const iconList: IconData[] = [
     displayName: "Kotlin",
   },
   {
-    id: "Spring",
+    id: "spring",
     displayName: "spring",
   },
   {
@@ -198,11 +198,11 @@ export const iconList: IconData[] = [
     displayName: "C",
   },
   {
-    id: "dot-net-core",
+    id: "dotnet-core",
     displayName: ".NET Core",
   },
   {
-    id: "asp-dot-net-core",
+    id: "asp-dotnet-core",
     displayName: "ASP.NET Core",
   },
 ];

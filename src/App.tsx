@@ -12,6 +12,7 @@ import IconList from "./components/icon-list";
 import { useContext } from "react";
 import { ThemeContext } from "./context/theme-context";
 import { ThemeOptions } from "./types/theme-options";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default function App() {
   const { themeOption, setTheme } = useContext(ThemeContext);
@@ -38,6 +39,11 @@ export default function App() {
         </NavbarBrand>
 
         <NavbarContent justify="end">
+          <a href="https://github.com/devlotfi/stack-icons" target="_blank">
+            <Button isIconOnly variant="bordered" className="bg-background">
+              <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
+            </Button>
+          </a>
           <Button
             isIconOnly
             variant="bordered"

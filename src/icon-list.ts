@@ -177,4 +177,32 @@ export const iconList: IconData[] = [
     id: "fritzing",
     displayName: "Fritzing",
   },
+  {
+    id: "kotlin",
+    displayName: "Kotlin",
+  },
+  {
+    id: "Spring",
+    displayName: "spring",
+  },
+  {
+    id: "cs",
+    displayName: "C#",
+  },
+  {
+    id: "cpp",
+    displayName: "C++",
+  },
+  {
+    id: "c",
+    displayName: "C",
+  },
+  {
+    id: "dot-net-core",
+    displayName: ".NET Core",
+  },
+  {
+    id: "asp-dot-net-core",
+    displayName: "ASP.NET Core",
+  },
 ];

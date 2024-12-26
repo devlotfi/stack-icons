@@ -37,18 +37,18 @@ Technology icons for github markdown
 
 ## Requirements
 - Node JS
-- Yarn
+- pnpm
 
 ## Install
 
 ```bash
-$ yarn
+$ pnpm i
 ```
 
 ## Development
 
 ```bash
-$ yarn run dev
+$ pnpm run dev
 ```
 
 # 📷 Preview

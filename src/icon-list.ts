@@ -205,4 +205,12 @@ export const iconList: IconData[] = [
     id: "asp-dotnet-core",
     displayName: "ASP.NET Core",
   },
+  {
+    id: "mysql",
+    displayName: "MySQL",
+  },
+  {
+    id: "react-router",
+    displayName: "React Router",
+  },
 ];

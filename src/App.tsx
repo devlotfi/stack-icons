@@ -46,7 +46,7 @@ export default function App() {
 
         <NavbarContent justify="end">
           <Link
-            href="https://github.com/devlotfi/stLinkck-icons"
+            href="https://github.com/devlotfi/stack-icons"
             target="_blank"
           >
             <Button

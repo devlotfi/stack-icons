@@ -1,4 +1,10 @@
-import { Button, Navbar, NavbarBrand, NavbarContent } from "@nextui-org/react";
+import {
+  Button,
+  Link,
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+} from "@nextui-org/react";
 import Logo from "./assets/logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -39,11 +45,18 @@ export default function App() {
         </NavbarBrand>
 
         <NavbarContent justify="end">
-          <a href="https://github.com/devlotfi/stack-icons" target="_blank">
-            <Button isIconOnly variant="bordered" className="bg-background">
+          <Link
+            href="https://github.com/devlotfi/stLinkck-icons"
+            target="_blank"
+          >
+            <Button
+              isIconOnly
+              variant="bordered"
+              className="bg-background pointer-events-none"
+            >
               <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
             </Button>
-          </a>
+          </Link>
           <Button
             isIconOnly
             variant="bordered"

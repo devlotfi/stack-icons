@@ -45,18 +45,17 @@ export default function App() {
         </NavbarBrand>
 
         <NavbarContent justify="end">
-          <Link
+          <Button
             href="https://github.com/devlotfi/stack-icons"
             target="_blank"
+            as={Link}
+            isIconOnly
+            variant="bordered"
+            className="bg-background"
           >
-            <Button
-              isIconOnly
-              variant="bordered"
-              className="bg-background pointer-events-none"
-            >
-              <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
-            </Button>
-          </Link>
+            <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
+          </Button>
+
           <Button
             isIconOnly
             variant="bordered"

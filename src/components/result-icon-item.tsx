@@ -10,6 +10,7 @@ import { useContext } from "react";
 import { AppContext } from "../context/app-context";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
+import { getIconUrl } from "../utils";
 
 interface Props {
   selectedIcon: SelectedIcon;
@@ -46,11 +47,7 @@ export default function ResultIconItem({ selectedIcon }: Props) {
         <img
           key={selectedIcon.icon.id}
           style={{ height: `${height}px` }}
-          src={
-            selectedIcon.showLabel
-              ? `https://raw.githubusercontent.com/devlotfi/stack-icons/main/icons/${selectedIcon.icon.id}.svg`
-              : `https://raw.githubusercontent.com/devlotfi/stack-icons/main/icons/${selectedIcon.icon.id}-compact.svg`
-          }
+          src={getIconUrl(selectedIcon.icon.id, selectedIcon.showLabel)}
           alt={selectedIcon.icon.id}
         />
       </PopoverTrigger>

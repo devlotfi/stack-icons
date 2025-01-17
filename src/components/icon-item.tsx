@@ -2,6 +2,7 @@ import { Card, CardBody, cn } from "@nextui-org/react";
 import { IconData } from "../types/icon-data";
 import { useContext } from "react";
 import { AppContext } from "../context/app-context";
+import { getIconUrl } from "../utils";
 
 interface Props {
   icon: IconData;
@@ -50,11 +51,7 @@ export default function IconItem({ icon, showLabel }: Props) {
       <CardBody className="flex-col">
         <img
           className="h-[3rem] my-[1rem]"
-          src={
-            showLabel
-              ? `https://raw.githubusercontent.com/devlotfi/stack-icons/main/icons/${icon.id}.svg`
-              : `https://raw.githubusercontent.com/devlotfi/stack-icons/main/icons/${icon.id}-compact.svg`
-          }
+          src={getIconUrl(icon.id, showLabel)}
           alt={icon.id}
         />
         <div

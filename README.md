@@ -16,7 +16,7 @@ Technology icons for github markdown
 
 <p float="left">
   <img height="50px" src="https://devlotfi.github.io/stack-icons/icons/html.svg">
-  <img height="50px" src="https://devlotfi.github.io/stack-icons/css.svg">
+  <img height="50px" src="https://devlotfi.github.io/stack-icons/icons/css.svg">
   <img height="50px" src="https://devlotfi.github.io/stack-icons/icons/ts.svg">
   <img height="50px" src="https://devlotfi.github.io/stack-icons/icons/tailwind.svg">
   <img height="50px" src="https://devlotfi.github.io/stack-icons/icons/react.svg">
@@ -29,7 +29,7 @@ Technology icons for github markdown
 ## Icons
 
 <p float="left">
-  <img height="50px" src="ttps://devlotfi.github.io/stack-icons/icons/figma.svg">
+  <img height="50px" src="https://devlotfi.github.io/stack-icons/icons/figma.svg">
 </p>
 
 

@@ -1,4 +1,4 @@
-import { Card, CardBody, cn } from "@nextui-org/react";
+import { Card, CardBody, cn } from "@heroui/react";
 import { IconData } from "../types/icon-data";
 import { useContext } from "react";
 import { AppContext } from "../context/app-context";
@@ -45,7 +45,7 @@ export default function IconItem({ icon, showLabel }: Props) {
       className={cn(
         "border border-divider",
         isSelected() &&
-          "border-[2px] border-primary bg-[hsl(var(--nextui-primary)/0.2)]"
+          "border-[2px] border-primary bg-[hsl(var(--heroui-primary)/0.2)]"
       )}
     >
       <CardBody className="flex-col">

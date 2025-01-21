@@ -1,15 +1,13 @@
-import { Input, Switch } from "@nextui-org/react";
+import { Input, Switch } from "@heroui/react";
 import { iconList } from "../icon-list";
 import IconItem from "./icon-item";
 import { useFormik } from "formik";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function IconList() {
   const [showLabel, setShowLabel] = useState<boolean>(true);
-
-  useEffect(() => {}, [showLabel]);
 
   const { values, handleChange } = useFormik({
     initialValues: {

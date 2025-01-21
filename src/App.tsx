@@ -4,7 +4,7 @@ import {
   Navbar,
   NavbarBrand,
   NavbarContent,
-} from "@nextui-org/react";
+} from "@heroui/react";
 import Logo from "./assets/logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

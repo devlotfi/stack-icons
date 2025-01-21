@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useContext } from "react";
 import { AppContext } from "../context/app-context";
-import { Card, CardHeader, Divider, CardBody, Input } from "@nextui-org/react";
+import { Card, CardHeader, Divider, CardBody, Input } from "@heroui/react";
 import ResultIconItem from "./result-icon-item";
 import CodeDisplay from "./code-display";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

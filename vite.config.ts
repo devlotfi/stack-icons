@@ -11,8 +11,8 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: (id) => {
-          if (id.includes("@nextui")) {
-            return "nextui";
+          if (id.includes("@heroui")) {
+            return "heroui";
           }
         },
       },

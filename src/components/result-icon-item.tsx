@@ -4,7 +4,7 @@ import {
   PopoverContent,
   PopoverTrigger,
   Switch,
-} from "@nextui-org/react";
+} from "@heroui/react";
 import { SelectedIcon } from "../types/selected-icon";
 import { useContext } from "react";
 import { AppContext } from "../context/app-context";

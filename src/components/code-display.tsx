@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { AppContext } from "../context/app-context";
-import { Button, Card, CardBody } from "@nextui-org/react";
+import { Button, Card, CardBody } from "@heroui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCopy } from "@fortawesome/free-solid-svg-icons";
 import { getIconUrl } from "../utils";

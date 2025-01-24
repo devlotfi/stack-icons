@@ -213,4 +213,116 @@ export const iconList: IconData[] = [
     id: "react-router",
     displayName: "React Router",
   },
+  {
+    id: "supabase",
+    displayName: "Supabase",
+  },
+  {
+    id: "firebase",
+    displayName: "Firebase",
+  },
+  {
+    id: "tanstack-start",
+    displayName: "Tanstack Start",
+  },
+  {
+    id: "tanstack-router",
+    displayName: "Tanstack Router",
+  },
+  {
+    id: "tanstack-query",
+    displayName: "Tanstack Query",
+  },
+  {
+    id: "tanstack-table",
+    displayName: "Tanstack Table",
+  },
+  {
+    id: "tanstack-form",
+    displayName: "Tanstack Form",
+  },
+  {
+    id: "tanstack-virtual",
+    displayName: "Tanstack Virtual",
+  },
+  {
+    id: "tanstack-ranger",
+    displayName: "Tanstack Ranger",
+  },
+  {
+    id: "tanstack-store",
+    displayName: "Tanstack Store",
+  },
+  {
+    id: "tanstack-config",
+    displayName: "Tanstack Config",
+  },
+  {
+    id: "appwrite",
+    displayName: "Appwrite",
+  },
+  {
+    id: "angular",
+    displayName: "Angular",
+  },
+  {
+    id: "docker",
+    displayName: "Docker",
+  },
+  {
+    id: "git",
+    displayName: "Git",
+  },
+  {
+    id: "kubernetes",
+    displayName: "Kubernetes",
+  },
+  {
+    id: "mongodb",
+    displayName: "MongoDB",
+  },
+  {
+    id: "netlify",
+    displayName: "Netlify",
+  },
+  {
+    id: "oracle",
+    displayName: "Oracle",
+  },
+  {
+    id: "storybook",
+    displayName: "Storybook",
+  },
+  {
+    id: "openapi",
+    displayName: "Openapi (Swagger)",
+  },
+  {
+    id: "svelte",
+    displayName: "Svelte",
+  },
+  {
+    id: "vuejs",
+    displayName: "Vue JS",
+  },
+  {
+    id: "nuxtjs",
+    displayName: "Nuxt JS",
+  },
+  {
+    id: "laravel",
+    displayName: "Laravel",
+  },
+  {
+    id: "bootstrap",
+    displayName: "Bootstrap",
+  },
+  {
+    id: "aws",
+    displayName: "Amazon Web Services",
+  },
+  {
+    id: "azure",
+    displayName: "Microsoft Azure",
+  },
 ];

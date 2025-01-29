@@ -42,8 +42,8 @@ export const iconList: IconData[] = [
     displayName: "Next JS",
   },
   {
-    id: "nextui",
-    displayName: "Next UI",
+    id: "heroui",
+    displayName: "Hero UI",
   },
   {
     id: "nestjs",
@@ -324,5 +324,13 @@ export const iconList: IconData[] = [
   {
     id: "azure",
     displayName: "Microsoft Azure",
+  },
+  {
+    id: "github-api",
+    displayName: "Github API",
+  },
+  {
+    id: "chartjs",
+    displayName: "Chart.js",
   },
 ];

@@ -1,4 +1,4 @@
-<img height="100px" width="100px" src="https://github.com/devlotfi/stack-icons/blob/main/github-assets/logo.svg">
+<img height="100px" width="100px" src="https://raw.githubusercontent.com/devlotfi/stack-icons/main/github-assets/logo.svg">
 
 
 
@@ -53,5 +53,5 @@ $ pnpm run dev
 
 # 📷 Preview
 
-<img src="https://github.com/devlotfi/stack-icons/blob/main/github-assets/preview-1.png">
-<img src="https://github.com/devlotfi/stack-icons/blob/main/github-assets/preview-2.png">
+<img src="https://raw.githubusercontent.com/devlotfi/stack-icons/main/github-assets/preview-1.png">
+<img src="https://raw.githubusercontent.com/devlotfi/stack-icons/main/github-assets/preview-2.png">

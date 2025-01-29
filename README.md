@@ -22,7 +22,7 @@ Technology icons for github markdown
   <img height="50px" src="https://devlotfi.github.io/stack-icons/icons/react.svg">
   <img height="50px" src="https://devlotfi.github.io/stack-icons/icons/fontawesome.svg">
   <img height="50px" src="https://devlotfi.github.io/stack-icons/icons/formik.svg">
-  <img height="50px" src="https://devlotfi.github.io/stack-icons/icons/nextui.svg">
+  <img height="50px" src="https://devlotfi.github.io/stack-icons/icons/heroui.svg">
   <img height="50px" src="https://devlotfi.github.io/stack-icons/icons/vite.svg">
 </p>
 

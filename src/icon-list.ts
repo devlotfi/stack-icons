@@ -206,6 +206,22 @@ export const iconList: IconData[] = [
     displayName: "ASP.NET Core",
   },
   {
+    id: "ef-core",
+    displayName: "Entity Framework Core",
+  },
+  {
+    id: "asp-dotnet-identity",
+    displayName: "ASP.NET Identity",
+  },
+  {
+    id: "blazor",
+    displayName: "Blazor",
+  },
+  {
+    id: "signalr",
+    displayName: "SignalR",
+  },
+  {
     id: "mysql",
     displayName: "MySQL",
   },

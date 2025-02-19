@@ -349,4 +349,8 @@ export const iconList: IconData[] = [
     id: "chartjs",
     displayName: "Chart.js",
   },
+  {
+    id: "react-native-paper",
+    displayName: "React Native Paper",
+  },
 ];

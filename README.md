@@ -1,4 +1,4 @@
-<img height="100px" width="100px" src="https://raw.githubusercontent.com/devlotfi/stack-icons/main/github-assets/logo.svg">
+<img src="https://raw.githubusercontent.com/devlotfi/stack-icons/main/github-assets/banner.png">
 
 
 

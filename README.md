@@ -1,6 +1,4 @@
-<img src="https://raw.githubusercontent.com/devlotfi/stack-icons/main/github-assets/github-banner.png">
-
-
+<img height="100px" width="100px" src="https://raw.githubusercontent.com/devlotfi/stack-icons/main/github-assets/logo.svg">
 
 # 📜 stack-icons
 Technology icons for github markdown

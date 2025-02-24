@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/devlotfi/stack-icons/main/github-assets/banner.png">
+<img src="https://raw.githubusercontent.com/devlotfi/stack-icons/main/github-assets/github-banner.png">
 
 
 

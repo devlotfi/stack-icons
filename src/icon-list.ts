@@ -353,4 +353,12 @@ export const iconList: IconData[] = [
     id: "react-native-paper",
     displayName: "React Native Paper",
   },
+  {
+    id: "maplibre",
+    displayName: "Maplibre",
+  },
+  {
+    id: "maptiler",
+    displayName: "Maptiler",
+  },
 ];

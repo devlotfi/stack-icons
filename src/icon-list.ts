@@ -361,4 +361,8 @@ export const iconList: IconData[] = [
     id: "maptiler",
     displayName: "Maptiler",
   },
+  {
+    id: "pyodide",
+    displayName: "Pyodide",
+  },
 ];

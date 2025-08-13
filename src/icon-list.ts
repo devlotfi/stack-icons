@@ -365,4 +365,12 @@ export const iconList: IconData[] = [
     id: "pyodide",
     displayName: "Pyodide",
   },
+  {
+    id: "mqtt",
+    displayName: "MQTT",
+  },
+  {
+    id: "mosquitto",
+    displayName: "Eclipse Mosquitto",
+  },
 ];

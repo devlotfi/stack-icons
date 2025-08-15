@@ -51,7 +51,7 @@ export default function App() {
             as={Link}
             isIconOnly
             variant="bordered"
-            className="bg-background"
+            className="bg-background text-[18pt]"
           >
             <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
           </Button>
@@ -59,7 +59,7 @@ export default function App() {
           <Button
             isIconOnly
             variant="bordered"
-            className="bg-background"
+            className="bg-background text-[18pt]"
             onPress={switchTheme}
           >
             {themeOption === ThemeOptions.LIGHT ? (

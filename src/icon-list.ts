@@ -373,4 +373,20 @@ export const iconList: IconData[] = [
     id: "mosquitto",
     displayName: "Eclipse Mosquitto",
   },
+  {
+    id: "emqx-cloud",
+    displayName: "EMQX Cloud",
+  },
+  {
+    id: "kibana",
+    displayName: "Kibana",
+  },
+  {
+    id: "elasticsearch",
+    displayName: "Elasticsearch",
+  },
+  {
+    id: "logstash",
+    displayName: "Logstash",
+  },
 ];

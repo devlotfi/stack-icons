@@ -389,4 +389,8 @@ export const iconList: IconData[] = [
     id: "logstash",
     displayName: "Logstash",
   },
+  {
+    id: "rxdb",
+    displayName: "RxDB",
+  },
 ];

@@ -12,7 +12,7 @@ export default function Result() {
   const { selectedIcons, height, setHeight } = useContext(AppContext);
 
   return (
-    <Card shadow="none" className="border border-divider">
+    <Card shadow="none" className="border border-divider rounded-2xl">
       <CardHeader>
         <div className="flex space-x-2 items-center text-[12pt]">
           <FontAwesomeIcon

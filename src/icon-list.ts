@@ -393,4 +393,8 @@ export const iconList: IconData[] = [
     id: "rxdb",
     displayName: "RxDB",
   },
+  {
+    id: "openweathermap",
+    displayName: "OpenWeatherMap",
+  },
 ];

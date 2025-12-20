@@ -43,7 +43,7 @@ export default function IconItem({ icon, showLabel }: Props) {
       shadow="none"
       isPressable
       className={cn(
-        "border border-divider",
+        "border border-divider rounded-xl",
         isSelected() &&
           "border-[2px] border-primary bg-[hsl(var(--heroui-primary)/0.2)]"
       )}

@@ -24,7 +24,8 @@ export default function IconList() {
         onChange={handleChange}
         variant="bordered"
         classNames={{
-          inputWrapper: "bg-background",
+          inputWrapper:
+            "bg-background shadow-none border border-divider rounded-xl",
         }}
         label="Search"
         startContent={<FontAwesomeIcon icon={faSearch}></FontAwesomeIcon>}

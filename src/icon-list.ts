@@ -397,4 +397,20 @@ export const iconList: IconData[] = [
     id: "openweathermap",
     displayName: "OpenWeatherMap",
   },
+  {
+    id: "arduino-cloud",
+    displayName: "Arduino Cloud",
+  },
+  {
+    id: "google-home",
+    displayName: "Google Home",
+  },
+  {
+    id: "amazon-alexa",
+    displayName: "Amazon Alexa",
+  },
+  {
+    id: "espressif",
+    displayName: "Espressif",
+  },
 ];

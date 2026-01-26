@@ -418,7 +418,7 @@ export const iconList: IconData[] = [
     displayName: "Containerlab",
   },
   {
-    id: "platformio",
-    displayName: "PlatformIO",
+    id: "cloudflare",
+    displayName: "Clouflare",
   },
 ];

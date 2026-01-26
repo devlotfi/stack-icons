@@ -421,4 +421,8 @@ export const iconList: IconData[] = [
     id: "cloudflare",
     displayName: "Clouflare",
   },
+  {
+    id: "resend",
+    displayName: "Resend",
+  },
 ];

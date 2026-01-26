@@ -417,4 +417,8 @@ export const iconList: IconData[] = [
     id: "containerlab",
     displayName: "Containerlab",
   },
+  {
+    id: "platformio",
+    displayName: "PlatformIO",
+  },
 ];

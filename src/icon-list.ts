@@ -425,4 +425,8 @@ export const iconList: IconData[] = [
     id: "resend",
     displayName: "Resend",
   },
+  {
+    id: "lucide",
+    displayName: "Lucide",
+  },
 ];

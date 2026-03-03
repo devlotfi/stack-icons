@@ -429,4 +429,8 @@ export const iconList: IconData[] = [
     id: "lucide",
     displayName: "Lucide",
   },
+  {
+    id: "iot-commander",
+    displayName: "IOT Commander",
+  },
 ];

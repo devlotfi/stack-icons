@@ -433,4 +433,32 @@ export const iconList: IconData[] = [
     id: "iot-commander",
     displayName: "IOT Commander",
   },
+  {
+    id: "hashicorp-terraform",
+    displayName: "Terraform",
+  },
+  {
+    id: "hashicorp-packer",
+    displayName: "Packer",
+  },
+  {
+    id: "hashicorp-waypoint",
+    displayName: "Waypoint",
+  },
+  {
+    id: "hashicorp-nomad",
+    displayName: "Nomad",
+  },
+  {
+    id: "hashicorp-vault",
+    displayName: "Vault",
+  },
+  {
+    id: "hashicorp-boundary",
+    displayName: "Boundary",
+  },
+  {
+    id: "hashicorp-consul",
+    displayName: "Consul",
+  },
 ];

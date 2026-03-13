@@ -461,4 +461,8 @@ export const iconList: IconData[] = [
     id: "hashicorp-consul",
     displayName: "Consul",
   },
+  {
+    id: "drizzle",
+    displayName: "Drizzle",
+  },
 ];

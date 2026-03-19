@@ -28,7 +28,7 @@ export default function CodeDisplay() {
         <div className="flex">
           <div className="flex pr-[1rem]">
             <Button
-              className="bg-background"
+              variant="ghost"
               isIconOnly
               size="sm"
               onPress={() => navigator.clipboard.writeText(getCode())}

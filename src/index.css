@@ -9,10 +9,10 @@
     --radius: 0.3rem;
 
     --background: #f4f7fb;
-    --foreground: #536077;
+    --foreground: #3a4e79;
 
     --surface: #ffffff;
-    --surface-foreground: #536077;
+    --surface-foreground: var(--foreground);
 
     --success: #1dbe63;
     --success-foreground: var(--snow);
@@ -42,7 +42,7 @@
     --radius: 0.3rem;
 
     --background: #242831;
-    --foreground: #b7bdc9;
+    --foreground: #d0d7e4;
 
     --surface: #323640;
     --surface-foreground: var(--foreground);

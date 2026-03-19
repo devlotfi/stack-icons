@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { AppContext } from "../context/app-context";
-import { Button, Card, CardBody } from "@heroui/react";
+import { Button, Card } from "@heroui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCopy } from "@fortawesome/free-solid-svg-icons";
 import { getIconUrl } from "../utils";
@@ -15,20 +15,19 @@ export default function CodeDisplay() {
       (selectedIcon) =>
         `<img height="${height}px" src="${getIconUrl(
           selectedIcon.icon.id,
-          selectedIcon.showLabel
-        )}">`
+          selectedIcon.showLabel,
+        )}">`,
     )
     .join("\n  ")}
 </div>`;
   };
 
   return (
-    <Card shadow="none" className="bg-content2 border border-divider">
-      <CardBody>
+    <Card className="bg-background border border-border">
+      <Card.Content>
         <div className="flex">
           <div className="flex pr-[1rem]">
             <Button
-              variant="bordered"
               className="bg-background"
               isIconOnly
               size="sm"
@@ -40,7 +39,7 @@ export default function CodeDisplay() {
 
           <pre className="flex flex-1">{getCode()}</pre>
         </div>
-      </CardBody>
+      </Card.Content>
     </Card>
   );
 }

@@ -1,8 +1,8 @@
-import { PropsWithChildren, useEffect, useState } from "react";
-import { Constants } from "../constants";
-import { AppliedThemes } from "../types/applied-theme";
+import { type PropsWithChildren, useEffect, useState } from "react";
+import type { AppliedThemes } from "../types/applied-theme";
 import { ThemeOptions } from "../types/theme-options";
 import { ThemeContext } from "../context/theme-context";
+import { Constants } from "../constants";
 
 const getSystemTheme = (): AppliedThemes => {
   if (
@@ -37,12 +37,10 @@ const initAppliedTheme = (): AppliedThemes => {
 };
 
 export function ThemeProvider({ children }: PropsWithChildren) {
-  const [themeOption, setThemeOption] = useState<ThemeOptions>(
-    initThemeOption()
-  );
-  const [appliedTheme, setAppliedTheme] = useState<AppliedThemes>(
-    initAppliedTheme()
-  );
+  const [themeOption, setThemeOption] =
+    useState<ThemeOptions>(initThemeOption());
+  const [appliedTheme, setAppliedTheme] =
+    useState<AppliedThemes>(initAppliedTheme());
 
   const applyTheme = (theme: ThemeOptions) => {
     const element = document.getElementById("theme-provider") as HTMLElement;
@@ -50,6 +48,8 @@ export function ThemeProvider({ children }: PropsWithChildren) {
       element.className = `bg-background text-foreground ${
         theme === ThemeOptions.LIGHT ? "light" : "dark"
       }`;
+      element.dataset.theme = element.dataset.theme =
+        theme === ThemeOptions.LIGHT ? "light" : "dark";
       setAppliedTheme(theme);
     } else if (theme === ThemeOptions.SYSTEM) {
       const systemTheme = getSystemTheme();
@@ -60,6 +60,8 @@ export function ThemeProvider({ children }: PropsWithChildren) {
         element.className = `bg-background text-foreground ${
           systemTheme === ThemeOptions.LIGHT ? "light" : "dark"
         }`;
+        element.dataset.theme =
+          systemTheme === ThemeOptions.LIGHT ? "light" : "dark";
         setAppliedTheme(systemTheme);
       }
     }
@@ -69,6 +71,21 @@ export function ThemeProvider({ children }: PropsWithChildren) {
   useEffect(() => {
     applyTheme(themeOption);
   }, [themeOption]);
+
+  useEffect(() => {
+    const metaTag = document.querySelector<HTMLMetaElement>(
+      'meta[name="theme-color"]',
+    );
+    if (!metaTag) return;
+    switch (appliedTheme) {
+      case ThemeOptions.LIGHT:
+        metaTag.setAttribute("content", "#d4d4d4");
+        break;
+      case ThemeOptions.DARK:
+        metaTag.setAttribute("content", "#282B32");
+        break;
+    }
+  }, [appliedTheme]);
 
   useEffect(() => {
     const handler = () => {

@@ -1,5 +1,75 @@
 @import "tailwindcss";
-@plugin './hero.ts';
-/* Note: You may need to change the path to fit your project structure */
-@source '../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
-@custom-variant dark (&:is(.dark *));
+@import "@heroui/styles";
+
+@layer base {
+  :root {
+    color-scheme: light;
+
+    --spacing: 0.25rem;
+    --radius: 0.3rem;
+
+    --background: #f4f7fb;
+    --foreground: #536077;
+
+    --surface: #ffffff;
+    --surface-foreground: #536077;
+
+    --success: #1dbe63;
+    --success-foreground: var(--snow);
+
+    --danger: #d42326;
+    --danger-foreground: var(--snow);
+
+    --accent: #45d9d9;
+
+    --border: #eeedef;
+    --separator: #c0c4cf;
+
+    --field-background: var(--background);
+    --field-foreground: var(--foreground);
+    --field-placeholder: color-mix(in srgb, var(--muted), transparent 30%);
+    --field-border: var(--border);
+
+    --surface-shadow: 0 0 0 0 transparent inset;
+    --field-shadow: 0 0 0 0 transparent inset;
+  }
+
+  .dark,
+  [data-theme="dark"] {
+    color-scheme: dark;
+
+    --spacing: 0.25rem;
+    --radius: 0.3rem;
+
+    --background: #242831;
+    --foreground: #b7bdc9;
+
+    --surface: #323640;
+    --surface-foreground: var(--foreground);
+
+    --success: #1dbe63;
+    --success-foreground: var(--snow);
+
+    --danger: #d42326;
+    --danger-foreground: var(--snow);
+
+    --default: #343940;
+    --default-foreground: var(--foreground);
+
+    --overlay: var(--background);
+    --overlay-foreground: var(--foreground);
+
+    --accent: #45d9d9;
+
+    --border: #3e4047;
+    --separator: #6f7787;
+
+    --field-background: var(--surface);
+    --field-foreground: var(--foreground);
+    --field-placeholder: color-mix(in srgb, var(--muted), transparent 30%);
+    --field-border: var(--border);
+
+    --surface-shadow: 0 0 0 0 transparent inset;
+    --field-shadow: 0 0 0 0 transparent inset;
+  }
+}

@@ -1,4 +1,4 @@
-import { Input, Switch } from "@heroui/react";
+import { InputGroup, Label, Switch, TextField } from "@heroui/react";
 import { iconList } from "../icon-list";
 import IconItem from "./icon-item";
 import { useFormik } from "formik";
@@ -18,26 +18,35 @@ export default function IconList() {
 
   return (
     <div className="flex flex-col space-y-3">
-      <Input
-        name="search"
-        value={values.search}
-        onChange={handleChange}
-        variant="bordered"
-        classNames={{
-          inputWrapper:
-            "bg-background shadow-none border border-divider rounded-xl",
-        }}
-        label="Search"
-        startContent={<FontAwesomeIcon icon={faSearch}></FontAwesomeIcon>}
-      ></Input>
-      <Switch isSelected={showLabel} onValueChange={setShowLabel}>
-        Show label
+      <TextField>
+        <Label>Search</Label>
+        <InputGroup className="border-border border bg-surface">
+          <InputGroup.Prefix>
+            <FontAwesomeIcon icon={faSearch}></FontAwesomeIcon>
+          </InputGroup.Prefix>
+          <InputGroup.Input
+            name="search"
+            value={values.search}
+            onChange={handleChange}
+          />
+        </InputGroup>
+      </TextField>
+
+      <Switch isSelected={showLabel} onChange={setShowLabel} size="lg">
+        <Switch.Control>
+          <Switch.Thumb />
+        </Switch.Control>
+        <Switch.Content>
+          <Label className="text-sm">Show label</Label>
+        </Switch.Content>
       </Switch>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
         {iconList
           .filter((icon) =>
-            icon.displayName.toLowerCase().includes(values.search.toLowerCase())
+            icon.displayName
+              .toLowerCase()
+              .includes(values.search.toLowerCase()),
           )
           .map((icon) => (
             <IconItem

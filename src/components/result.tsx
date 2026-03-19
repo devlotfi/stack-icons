@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useContext } from "react";
 import { AppContext } from "../context/app-context";
-import { Card, CardHeader, Divider, CardBody, Input } from "@heroui/react";
+import { Card, InputGroup, Label, Separator, TextField } from "@heroui/react";
 import ResultIconItem from "./result-icon-item";
 import CodeDisplay from "./code-display";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,19 +12,19 @@ export default function Result() {
   const { selectedIcons, height, setHeight } = useContext(AppContext);
 
   return (
-    <Card shadow="none" className="border border-divider rounded-2xl">
-      <CardHeader>
+    <Card className="border-border border">
+      <Card.Header>
         <div className="flex space-x-2 items-center text-[12pt]">
           <FontAwesomeIcon
-            className="text-primary"
+            className="text-accent"
             icon={faMarkdown}
           ></FontAwesomeIcon>
           <div className="flex font-medium">Result</div>
           <div className="flex text-[11pt]">(Click icons to edit)</div>
         </div>
-      </CardHeader>
-      <Divider></Divider>
-      <CardBody>
+      </Card.Header>
+      <Separator className="bg-border"></Separator>
+      <Card.Content>
         <div className="flex flex-col space-y-3">
           {selectedIcons.length > 0 ? (
             <>
@@ -36,35 +36,39 @@ export default function Result() {
                   ></ResultIconItem>
                 ))}
               </div>
-              <Input
-                name="height"
-                type="number"
-                min={0}
-                max={99}
-                step={1}
-                value={height as any}
-                onChange={(e) => {
-                  const value: number = e.target.value as any;
-                  if (value >= 0 && value < 100) {
-                    setHeight(e.target.value as any);
-                  }
-                }}
-                label="Height"
-                classNames={{
-                  inputWrapper: "border border-divider shadow-none bg-content2",
-                }}
-                startContent={
-                  <FontAwesomeIcon icon={faTextHeight}></FontAwesomeIcon>
-                }
-                endContent={<div className="flex">px</div>}
-              ></Input>
+              <TextField>
+                <Label>Size</Label>
+                <InputGroup className="border border-border bg-background">
+                  <InputGroup.Prefix>
+                    <FontAwesomeIcon icon={faTextHeight}></FontAwesomeIcon>
+                  </InputGroup.Prefix>
+                  <InputGroup.Input
+                    name="height"
+                    type="number"
+                    min={0}
+                    max={99}
+                    step={1}
+                    value={height as any}
+                    onChange={(e) => {
+                      const value: number = e.target.value as any;
+                      if (value >= 0 && value < 100) {
+                        setHeight(e.target.value as any);
+                      }
+                    }}
+                  />
+                  <InputGroup.Suffix>
+                    <div className="flex">px</div>
+                  </InputGroup.Suffix>
+                </InputGroup>
+              </TextField>
+
               <CodeDisplay></CodeDisplay>
             </>
           ) : (
             <div className="flex p-[1rem]">Select icons to get started</div>
           )}
         </div>
-      </CardBody>
+      </Card.Content>
     </Card>
   );
 }

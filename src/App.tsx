@@ -1,11 +1,4 @@
-import {
-  Button,
-  Link,
-  Navbar,
-  NavbarBrand,
-  NavbarContent,
-  ScrollShadow,
-} from "@heroui/react";
+import { Button, ScrollShadow } from "@heroui/react";
 import Logo from "./assets/logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -39,46 +32,40 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-dvh min-w-dvw max-h-dvh max-w-dvw flex flex-col bg-content2">
-      <Navbar
-        className="bg-content2 h-[4rem]"
-        isBlurred={false}
-        position="static"
-      >
-        <NavbarBrand>
+    <div className="min-h-dvh min-w-dvw max-h-dvh max-w-dvw flex flex-col bg-background">
+      <div className="flex justify-center">
+        <div className="flex flex-1 justify-between max-w-screen-lg p-[1rem]">
           <img className="h-[2.5rem]" src={Logo} alt="logo" />
-        </NavbarBrand>
 
-        <NavbarContent justify="end">
-          <Button
-            href="https://github.com/devlotfi/stack-icons"
-            target="_blank"
-            as={Link}
-            isIconOnly
-            variant="bordered"
-            radius="full"
-            className="bg-background text-[18pt] border border-divider"
-          >
-            <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
-          </Button>
-
-          <Button
-            isIconOnly
-            variant="bordered"
-            radius="full"
-            className="bg-background text-[18pt] border border-divider"
-            onPress={switchTheme}
-          >
-            {themeOption === ThemeOptions.LIGHT ? (
-              <FontAwesomeIcon icon={faSun}></FontAwesomeIcon>
-            ) : themeOption === ThemeOptions.DARK ? (
-              <FontAwesomeIcon icon={faMoon}></FontAwesomeIcon>
-            ) : (
-              <FontAwesomeIcon icon={faComputer}></FontAwesomeIcon>
-            )}
-          </Button>
-        </NavbarContent>
-      </Navbar>
+          <div className="flex items-center gap-[0.5rem]">
+            <a href="https://github.com/devlotfi/stack-icons" target="_blank">
+              <Button
+                isIconOnly
+                size="lg"
+                variant="outline"
+                className="bg-surface text-[15pt] border border-border"
+              >
+                <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
+              </Button>
+            </a>
+            <Button
+              isIconOnly
+              size="lg"
+              variant="outline"
+              className="bg-surface text-[15pt] border border-border"
+              onPress={switchTheme}
+            >
+              {themeOption === ThemeOptions.LIGHT ? (
+                <FontAwesomeIcon icon={faSun}></FontAwesomeIcon>
+              ) : themeOption === ThemeOptions.DARK ? (
+                <FontAwesomeIcon icon={faMoon}></FontAwesomeIcon>
+              ) : (
+                <FontAwesomeIcon icon={faComputer}></FontAwesomeIcon>
+              )}
+            </Button>
+          </div>
+        </div>
+      </div>
 
       <ScrollShadow className="h-[calc(100dvh-4rem)] flex flex-col items-center pb-[5rem]">
         <div className="flex flex-col w-full max-w-screen-lg space-y-5 px-[1rem]">
@@ -98,7 +85,7 @@ export default function App() {
 
           <div className="flex space-x-3 items-center text-[20pt]">
             <FontAwesomeIcon
-              className="text-primary"
+              className="text-accent"
               icon={faPlus}
             ></FontAwesomeIcon>
             <div className="flex font-bold">Add icons</div>

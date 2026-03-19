@@ -1,10 +1,4 @@
-import {
-  Button,
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-  Switch,
-} from "@heroui/react";
+import { Button, Label, Popover, Switch } from "@heroui/react";
 import { SelectedIcon } from "../types/selected-icon";
 import { useContext } from "react";
 import { AppContext } from "../context/app-context";
@@ -42,32 +36,36 @@ export default function ResultIconItem({ selectedIcon }: Props) {
   };
 
   return (
-    <Popover showArrow offset={10} placement="bottom">
-      <PopoverTrigger className="cursor-pointer">
+    <Popover>
+      <Popover.Trigger>
         <img
           key={selectedIcon.icon.id}
           style={{ height: `${height}px` }}
           src={getIconUrl(selectedIcon.icon.id, selectedIcon.showLabel)}
           alt={selectedIcon.icon.id}
         />
-      </PopoverTrigger>
+      </Popover.Trigger>
 
-      <PopoverContent className="p-[0.5rem] flex flex-row space-x-3">
-        <Button
-          color="danger"
-          variant="bordered"
-          isIconOnly
-          onPress={deleteIcon}
-        >
-          <FontAwesomeIcon icon={faTrash}></FontAwesomeIcon>
-        </Button>
-        <Switch
-          isSelected={selectedIcon.showLabel}
-          onValueChange={() => changeShowLabel(!selectedIcon.showLabel)}
-        >
-          Show label
-        </Switch>
-      </PopoverContent>
+      <Popover.Content>
+        <Popover.Dialog className="flex gap-[1rem]">
+          <Popover.Arrow />
+          <Button variant="danger" isIconOnly onPress={deleteIcon}>
+            <FontAwesomeIcon icon={faTrash}></FontAwesomeIcon>
+          </Button>
+
+          <Switch
+            isSelected={selectedIcon.showLabel}
+            onChange={() => changeShowLabel(!selectedIcon.showLabel)}
+          >
+            <Switch.Control>
+              <Switch.Thumb />
+            </Switch.Control>
+            <Switch.Content>
+              <Label className="text-sm">Show label</Label>
+            </Switch.Content>
+          </Switch>
+        </Popover.Dialog>
+      </Popover.Content>
     </Popover>
   );
 }

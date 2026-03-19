@@ -1,4 +1,4 @@
-import { Card, CardBody, cn } from "@heroui/react";
+import { Card, cn } from "@heroui/react";
 import { IconData } from "../types/icon-data";
 import { useContext } from "react";
 import { AppContext } from "../context/app-context";
@@ -12,15 +12,12 @@ interface Props {
 export default function IconItem({ icon, showLabel }: Props) {
   const { selectedIcons, setSelectedIcons } = useContext(AppContext);
 
-  const isSelected = () => {
-    const isSelected = selectedIcons.find(
-      (selectedIcon) => selectedIcon.icon.id === icon.id
-    );
-    return isSelected !== undefined ? true : false;
-  };
+  const isSelected =
+    selectedIcons.find((selectedIcon) => selectedIcon.icon.id === icon.id) !==
+    undefined;
 
   const handlePress = () => {
-    if (isSelected()) {
+    if (isSelected) {
       setSelectedIcons([
         ...selectedIcons
           .filter((selectedIcon) => selectedIcon.icon.id !== icon.id)
@@ -39,16 +36,15 @@ export default function IconItem({ icon, showLabel }: Props) {
 
   return (
     <Card
-      onPress={handlePress}
-      shadow="none"
-      isPressable
+      onClick={handlePress}
       className={cn(
-        "border border-divider rounded-xl",
-        isSelected() &&
-          "border-[2px] border-primary bg-[hsl(var(--heroui-primary)/0.2)]"
+        "border border-border cursor-pointer",
+        isSelected &&
+          "border-[2px] border-accent bg-[color-mix(in_srgb,var(--accent),transparent_85%)]",
+        !isSelected && "hover:border-accent duration-150 animate-[border]",
       )}
     >
-      <CardBody className="flex-col">
+      <Card.Content className="flex-col">
         <img
           className="h-[3rem] my-[1rem]"
           src={getIconUrl(icon.id, showLabel)}
@@ -57,12 +53,12 @@ export default function IconItem({ icon, showLabel }: Props) {
         <div
           className={cn(
             "flex font-medium self-start",
-            isSelected() && "text-primary"
+            isSelected && "text-accent",
           )}
         >
           {icon.displayName}
         </div>
-      </CardBody>
+      </Card.Content>
     </Card>
   );
 }

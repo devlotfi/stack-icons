@@ -430,8 +430,8 @@ export const iconList: IconData[] = [
     displayName: "Lucide",
   },
   {
-    id: "iot-commander",
-    displayName: "IOT Commander",
+    id: "esp-commander",
+    displayName: "ESP Commander",
   },
   {
     id: "hashicorp-terraform",

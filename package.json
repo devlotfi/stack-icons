@@ -13,14 +13,14 @@
     "@fortawesome/fontawesome-svg-core": "^7.2.0",
     "@fortawesome/free-brands-svg-icons": "^7.2.0",
     "@fortawesome/free-solid-svg-icons": "^7.2.0",
-    "@fortawesome/react-fontawesome": "^3.2.0",
-    "@heroui/react": "3.0.0-rc.1",
-    "@heroui/styles": "3.0.0-rc.1",
+    "@fortawesome/react-fontawesome": "^3.3.0",
+    "@heroui/react": "3.0.3",
+    "@heroui/styles": "3.0.3",
     "@tailwindcss/vite": "^4.2.2",
     "formik": "^2.4.9",
     "framer-motion": "^12.38.0",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
     "tailwindcss": "^4.2.2"
   },
   "devDependencies": {
@@ -28,15 +28,15 @@
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.1",
-    "autoprefixer": "^10.4.27",
-    "eslint": "^10.0.3",
-    "eslint-plugin-react-hooks": "^7.0.1",
+    "autoprefixer": "^10.5.0",
+    "eslint": "^10.2.1",
+    "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.2",
-    "globals": "^17.4.0",
-    "postcss": "^8.5.8",
-    "typescript": "~5.9.3",
-    "typescript-eslint": "^8.57.1",
-    "vite": "^8.0.1"
+    "globals": "^17.5.0",
+    "postcss": "^8.5.10",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.58.2",
+    "vite": "^8.0.8"
   },
   "packageManager": "pnpm@9.15.1+sha512.1acb565e6193efbebda772702950469150cf12bcc764262e7587e71d19dc98a423dff9536e57ea44c49bdf790ff694e83c27be5faa23d67e0c033b583be4bfcf"
 }

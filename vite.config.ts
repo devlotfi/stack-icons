@@ -9,12 +9,15 @@ export default defineConfig({
   build: {
     outDir: "./docs",
     emptyOutDir: true,
-    rollupOptions: {
+    rolldownOptions: {
       output: {
-        manualChunks: (id) => {
-          if (id.includes("@heroui")) {
-            return "heroui";
-          }
+        codeSplitting: {
+          groups: [
+            {
+              name: "heroui",
+              test: /node_modules\/@heroui/,
+            },
+          ],
         },
       },
     },

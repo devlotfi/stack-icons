@@ -434,6 +434,10 @@ export const iconList: IconData[] = [
     displayName: "ESP Commander",
   },
   {
+    id: "esp-now-mqtt-gateway",
+    displayName: "ESP-NOW MQTT Gateway",
+  },
+  {
     id: "hashicorp-terraform",
     displayName: "Terraform",
   },

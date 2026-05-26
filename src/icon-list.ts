@@ -473,4 +473,29 @@ export const iconList: IconData[] = [
     id: "gemini",
     displayName: "Gemini",
   },
+
+  {
+    id: "numpy",
+    displayName: "Numpy",
+  },
+  {
+    id: "scikitlearn",
+    displayName: "Scikit Learn",
+  },
+  {
+    id: "pytorch",
+    displayName: "PyTorch",
+  },
+  {
+    id: "fastapi",
+    displayName: "FastAPI",
+  },
+  {
+    id: "matplotlib",
+    displayName: "Matplotlib",
+  },
+  {
+    id: "pandas",
+    displayName: "Pandas",
+  },
 ];

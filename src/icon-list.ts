@@ -498,4 +498,8 @@ export const iconList: IconData[] = [
     id: "pandas",
     displayName: "Pandas",
   },
+  {
+    id: "plotly",
+    displayName: "Plotly",
+  },
 ];

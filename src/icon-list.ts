@@ -438,6 +438,10 @@ export const iconList: IconData[] = [
     displayName: "ESP-NOW MQTT Gateway",
   },
   {
+    id: "push-notifier",
+    displayName: "Push Notifier",
+  },
+  {
     id: "hashicorp-terraform",
     displayName: "Terraform",
   },

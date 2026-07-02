@@ -506,4 +506,12 @@ export const iconList: IconData[] = [
     id: "plotly",
     displayName: "Plotly",
   },
+  {
+    id: "grafana",
+    displayName: "Grafana",
+  },
+  {
+    id: "opentelemetry",
+    displayName: "OpenTelemetry",
+  },
 ];

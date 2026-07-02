@@ -514,4 +514,8 @@ export const iconList: IconData[] = [
     id: "opentelemetry",
     displayName: "OpenTelemetry",
   },
+  {
+    id: "prometheus",
+    displayName: "Prometheus",
+  },
 ];

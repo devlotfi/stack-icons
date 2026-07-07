@@ -1,11 +1,11 @@
 import { Card, cn } from "@heroui/react";
-import { IconData } from "../types/icon-data";
 import { useContext } from "react";
 import { AppContext } from "../context/app-context";
 import { getIconUrl } from "../utils";
+import { Icon } from "../types/icon-data";
 
 interface Props {
-  icon: IconData;
+  icon: Icon;
   showLabel: boolean;
 }
 

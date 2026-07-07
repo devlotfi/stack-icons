@@ -1,13 +1,24 @@
 import { InputGroup, Label, Switch, TextField } from "@heroui/react";
-import { iconList } from "../icon-list";
 import IconItem from "./icon-item";
 import { useFormik } from "formik";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import { useQuery } from "@tanstack/react-query";
+import axios from "axios";
+import LoadingScreen from "./loading-screen";
+import { IconsConfig } from "../types/icon-data";
 
 export default function IconList() {
   const [showLabel, setShowLabel] = useState<boolean>(true);
+
+  const { data, isLoading } = useQuery({
+    queryKey: ["ICONS"],
+    queryFn: async (): Promise<IconsConfig> => {
+      const res = await axios.get(`${import.meta.env.BASE_URL}icon-list.json`);
+      return res.data;
+    },
+  });
 
   const { values, handleChange } = useFormik({
     initialValues: {
@@ -15,6 +26,10 @@ export default function IconList() {
     },
     onSubmit() {},
   });
+
+  if (isLoading || !data) {
+    return <LoadingScreen></LoadingScreen>;
+  }
 
   return (
     <div className="flex flex-col space-y-3">
@@ -42,7 +57,7 @@ export default function IconList() {
       </Switch>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-        {iconList
+        {data.items
           .filter((icon) =>
             icon.displayName
               .toLowerCase()

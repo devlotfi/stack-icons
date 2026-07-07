@@ -17,6 +17,8 @@
     "@heroui/react": "3.0.3",
     "@heroui/styles": "3.0.3",
     "@tailwindcss/vite": "^4.2.2",
+    "@tanstack/react-query": "^5.101.2",
+    "axios": "^1.18.1",
     "formik": "^2.4.9",
     "framer-motion": "^12.38.0",
     "react": "^19.2.5",

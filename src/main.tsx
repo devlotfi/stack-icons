@@ -4,13 +4,18 @@ import "./index.css";
 import App from "./App.tsx";
 import AppProvider from "./provider/app-provider.tsx";
 import { ThemeProvider } from "./provider/theme-provider.tsx";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
+const queryClient = new QueryClient();
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <ThemeProvider>
-      <AppProvider>
-        <App />
-      </AppProvider>
-    </ThemeProvider>
+    <QueryClientProvider client={queryClient}>
+      <ThemeProvider>
+        <AppProvider>
+          <App />
+        </AppProvider>
+      </ThemeProvider>
+    </QueryClientProvider>
   </StrictMode>,
 );

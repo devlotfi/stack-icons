@@ -1,6 +1,6 @@
-import { IconData } from "./icon-data";
+import { Icon } from "./icon-data";
 
 export interface SelectedIcon {
   showLabel: boolean;
-  icon: IconData;
+  icon: Icon;
 }

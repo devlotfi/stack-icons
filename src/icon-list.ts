@@ -518,4 +518,8 @@ export const iconList: IconData[] = [
     id: "prometheus",
     displayName: "Prometheus",
   },
+  {
+    id: "docusaurus",
+    displayName: "Docusaurus",
+  },
 ];

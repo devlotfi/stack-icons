@@ -521,6 +521,14 @@
     {
       "id": "docusaurus",
       "displayName": "Docusaurus"
+    },
+    {
+      "id": "hono",
+      "displayName": "Hono"
+    },
+    {
+      "id": "lvgl",
+      "displayName": "LVGL"
     }
   ]
 }

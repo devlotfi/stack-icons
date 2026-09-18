@@ -529,6 +529,26 @@
     {
       "id": "lvgl",
       "displayName": "LVGL"
+    },
+    {
+      "id": "qgis",
+      "displayName": "QGIS"
+    },
+    {
+      "id": "directus",
+      "displayName": "Directus"
+    },
+    {
+      "id": "turf",
+      "displayName": "Turf.js"
+    },
+    {
+      "id": "flexsearch",
+      "displayName": "FlexSearch"
+    },
+    {
+      "id": "swiper",
+      "displayName": "Swiper.js"
     }
   ]
 }

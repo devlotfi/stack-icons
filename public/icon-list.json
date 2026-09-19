@@ -553,6 +553,10 @@
     {
       "id": "arduino-json",
       "displayName": "Arduino JSON"
+    },
+    {
+      "id": "nodeserial",
+      "displayName": "Node SerialPort"
     }
   ]
 }

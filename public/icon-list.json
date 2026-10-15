@@ -561,6 +561,18 @@
     {
       "id": "linux",
       "displayName": "Linux"
+    },
+    {
+      "id": "jetpack-compose",
+      "displayName": "Jetpack Compose"
+    },
+    {
+      "id": "compose-query",
+      "displayName": "Compose Query"
+    },
+    {
+      "id": "compose-ref",
+      "displayName": "Compose Ref"
     }
   ]
 }

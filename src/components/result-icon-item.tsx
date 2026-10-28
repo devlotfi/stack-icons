@@ -1,4 +1,4 @@
-import { Button, Label, Popover, Switch } from "@heroui/react";
+import { Button, Popover, Switch } from "@heroui/react";
 import { SelectedIcon } from "../types/selected-icon";
 import { useContext } from "react";
 import { AppContext } from "../context/app-context";
@@ -47,7 +47,7 @@ export default function ResultIconItem({ selectedIcon }: Props) {
       </Popover.Trigger>
 
       <Popover.Content>
-        <Popover.Dialog className="flex gap-[1rem]">
+        <Popover.Dialog className="flex items-center gap-[1rem]">
           <Popover.Arrow />
           <Button variant="danger" isIconOnly onPress={deleteIcon}>
             <FontAwesomeIcon icon={faTrash}></FontAwesomeIcon>
@@ -57,11 +57,11 @@ export default function ResultIconItem({ selectedIcon }: Props) {
             isSelected={selectedIcon.showLabel}
             onChange={() => changeShowLabel(!selectedIcon.showLabel)}
           >
-            <Switch.Control>
-              <Switch.Thumb />
-            </Switch.Control>
             <Switch.Content>
-              <Label className="text-sm">Show label</Label>
+              <Switch.Control>
+                <Switch.Thumb />
+              </Switch.Control>
+              Show label
             </Switch.Content>
           </Switch>
         </Popover.Dialog>

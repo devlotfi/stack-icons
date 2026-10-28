@@ -48,11 +48,11 @@ export default function IconList() {
       </TextField>
 
       <Switch isSelected={showLabel} onChange={setShowLabel} size="lg">
-        <Switch.Control>
-          <Switch.Thumb />
-        </Switch.Control>
         <Switch.Content>
-          <Label className="text-sm">Show label</Label>
+          <Switch.Control>
+            <Switch.Thumb />
+          </Switch.Control>
+          Show label
         </Switch.Content>
       </Switch>
 

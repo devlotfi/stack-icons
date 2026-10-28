@@ -571,8 +571,16 @@
       "displayName": "Compose Query"
     },
     {
-      "id": "compose-ref",
-      "displayName": "Compose Ref"
+      "id": "compose-vstore",
+      "displayName": "Compose VStore"
+    },
+    {
+      "id": "compose-form",
+      "displayName": "Compose Form"
+    },
+    {
+      "id": "kanyon",
+      "displayName": "Kanyon"
     }
   ]
 }
